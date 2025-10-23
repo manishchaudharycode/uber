@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { InputOTPControlled } from "./inputOtp";
 
-function    RidePopUp(props: any) {
+function      RidePopUp(props: any) {
   return (
     <div className="h-screen">
       <h5
@@ -29,10 +29,10 @@ function    RidePopUp(props: any) {
         </svg>
       </h5>
       <h3 className="text-2xl mb-10 font-semibold">New Ride Available !</h3>
-      <div className="flex items-center justify-between p-3 bg-neutral-600/30 rounded-md mb-4">
-        <div className="flex items-center   gap-3">
+      <div className="flex w-[95%] items-center justify-between p-3 bg-neutral-600/30 rounded-md mb-4">
+        <div className="flex items-center  gap-3">
           <img
-            className="w-20  object-cover rounded-full"
+            className="w-18  object-cover rounded-full"
             src="https://imgs.search.brave.com/6l9q_hbn9SrYPIQc5nKvWyBxa-cqrEVN5laWSOLCGwQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4Lzk4LzIyLzAw/LzM2MF9GXzg5ODIy/MDAyNl9ZcEV0WGwz/R0NhSk0zOXJQTHV4/OHQwYWN4eTN3cHNR/Ti5qcGc"
             alt=""
           />
@@ -41,7 +41,7 @@ function    RidePopUp(props: any) {
         <h5>4.5 km</h5>
       </div>
       <div className="flex justify-between  gap-5 flex-col items-center">
-        <div className="w-full border-t-1 ">
+        <div className="w-[90%] border-t-1 ">
           <div className="flex gap-5 mb-3 p-2 border-b-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +109,8 @@ function    RidePopUp(props: any) {
             </div>
           </div>
         </div>
-       <form >
-       <div className="grid gap-4 w-full">
+       <form className="w-[80%] " >
+       <div className="grid gap-4 ">
          <InputOTPControlled  />
          <Button
           onClick={() => props.setRidePopupPanel(false)}
