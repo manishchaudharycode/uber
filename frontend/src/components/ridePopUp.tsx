@@ -2,8 +2,15 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { InputOTPControlled } from "./inputOtp";
+import { useState } from "react";
+
 
 function      RidePopUp(props: any) {
+  const [otp, setOtp] = useState("")
+  
+  const submitHander = (e: any)=>{
+    e.preventDefault()
+  }
   return (
     <div className="h-screen">
       <h5
@@ -109,9 +116,12 @@ function      RidePopUp(props: any) {
             </div>
           </div>
         </div>
-       <form className="w-[80%] " >
+       <form className="w-[80%] " onSubmit={(e)=>{
+        submitHander(e)
+       }} >
        <div className="grid gap-4 ">
-         <InputOTPControlled  />
+          <InputOTPControlled value={otp} onChange={setOtp} />
+
          <Button
           onClick={() => props.setRidePopupPanel(false)}
           variant={"outline"}

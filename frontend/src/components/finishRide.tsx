@@ -111,10 +111,10 @@ function FinishRide(props: any) {
        <form className="w-[80%]" >
        <div className="grid gap-4 ">
         <Link 
-         to={"/captain-ride"}
+         to={"/captain-home "}
           className="w-full bg-neutral-500/60 flex justify-center items-center p-1.5 rounded-md"
         >
-          Complete Ride
+          Finish Ride
         </Link>
        </div>
        </form>
