@@ -19,6 +19,8 @@ function LocationSearchPanel(props: any) {
       name: "18A, Near ACET college mathura Road Aligarh ",
     },
   ];
+
+  
   return (
     <div>
       {location.map((value, indx) => {

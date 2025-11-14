@@ -26,7 +26,7 @@ function Home() {
   const vehicleRef = useRef(null);
   const waitingForDriverRef = useRef(null)
 
-  const submitHandler = (e: React.FormEvent) => {
+  const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
   };
 
